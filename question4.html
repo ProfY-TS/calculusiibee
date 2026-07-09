@@ -38,6 +38,13 @@
             color: #666;
             margin-top: 0.5rem;
         }
+        img {
+            display: block;
+            margin: 1rem auto;
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
         a {
             font-size: 1.1rem;
             color: #0066cc;
@@ -53,15 +60,23 @@
             background-color: #0066cc;
             color: white;
         }
+        .small-note {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 0.5rem;
+        }
     </style>
 </head>
 <body>
     <div class="box">
         <span class="emoji-big">🎉</span>
         <div class="correct">Yes, this one!</div>
-        <div class="sub">You found the correct URL: <strong>question4.html</strong></div>
-        <p style="color: #888;">Congratulations! You have solved the puzzle.</p>
-        <a href="index.html">← Go back to start</a>
+        <div class="sub">You found the correct path.</div>
+        <p style="color: #666;">Scan the QR code below to reveal the final answer.</p>
+
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://profy-ts.github.io/calculusiibee/real.html" alt="QR Code" />
+
+        <div class="small-note"><a href="index.html" style="border: none; padding: 0; font-size: 0.9rem; color: #0066cc;">← Go back to start</a></div>
     </div>
 </body>
 </html>
